@@ -8,6 +8,7 @@
 }
 
 body {
+  font-family: sans-serif;
   padding: 0;
   background-color: var(--bgColor);
 }
@@ -42,6 +43,7 @@ button {
   height: 80px;
   border: none;
   outline: none;
+  background: var(--displayColor);
 }
 
 button:active {
@@ -89,7 +91,7 @@ button:active {
 
 .calculator__keys-bottom .right button {
   height: 320px;
-  border-top: 2px solid var(--buttonBackground);
+  border-top: 2px solid var(--buttonBorder);
   font-size: 30px;
   background-color: var(--rightBackground);
 }
