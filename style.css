@@ -1,0 +1,95 @@
+:root {
+  --bgColor: #93d6d9;
+  --displayColor: #fff;
+  --displayBackground: #242424;
+  --buttonBackground: #e9e9e9;
+  --buttonBorder: #bababa;
+  --rightBackground: #f68764;
+}
+
+body {
+  padding: 0;
+  background-color: var(--bgColor);
+}
+
+.calc {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 400px;
+  height: 500px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calculator__display {
+  padding: 0 20px;
+  height: 100px;
+  line-height: 100px;
+  background: var(--displayBackground);
+  color: var(--displayColor);
+  font-size: 30px;
+  text-align: right;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 80px;
+  border: none;
+  outline: none;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+.calculator__keys-actions {
+  font-size: 0;
+}
+
+.calculator__keys-actions button {
+  display: inline-block;
+  font-size: 30px;
+  background: var(--buttonBackground);
+}
+
+.calculator__keys-actions button:not(:last-child),
+.calculator__keys-bottom .left button {
+  border-right: 2px solid var(--buttonBorder);
+}
+
+.calculator__keys-bottom {
+  font-size: 0;
+}
+
+.calculator__keys-bottom .left,
+.calculator__keys-bottom .right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.calculator__keys-bottom .left {
+  width: 300px;
+}
+
+.calculator__keys-bottom .left button {
+  border-right: 2px solid var(--buttonBorder);
+  border-top: 2px solid var(--buttonBorder);
+}
+
+.calculator__keys-bottom .left button,
+.calculator__keys-bottom .right button {
+  font-size: 30px;
+}
+
+.calculator__keys-bottom .right button {
+  height: 320px;
+  border-top: 2px solid var(--buttonBackground);
+  font-size: 30px;
+  background-color: var(--rightBackground);
+}
